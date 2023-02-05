@@ -11,8 +11,8 @@
 
 
 let minhaVar = 567;
-minhaVar1 = "texto";
-minhaVar2 = true;
+let minhaVar1 = "texto";
+let minhaVar2 = true;
 
 console.log(minhaVar);
 console.log(minhaVar1);
