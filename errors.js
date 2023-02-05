@@ -1,6 +1,6 @@
 // tratamentos de erros
 
 const numero = 1;
-minhaVar = "Oi";
+let minhaVar = "Oi";
 console.log(numero);
 console.log(minhaVar);
