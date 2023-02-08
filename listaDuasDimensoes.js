@@ -50,6 +50,6 @@ const funcionarios1 = [
     [30, 35, 28]
   ];
 
-  console.log(`${funcionarios[0][2]} tem idade ${funcionarios[1][2]}`)
+  console.log(`${funcionarios1[0][2]} tem idade ${funcionarios1[1][2]}`)
 
 
