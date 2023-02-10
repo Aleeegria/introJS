@@ -8,3 +8,6 @@ console.log(nome + sobrenome);
 console.log(nome, sobrenome);
 console.log(nome + " " + sobrenome);
 console.log(`Meu nome é ${nome} ${sobrenome}`);
+
+let contador; // declarar a varivel
+contador = 0; // atribuir valor à variavel
