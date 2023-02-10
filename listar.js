@@ -8,7 +8,10 @@ console.log("Trabalhando com listas !!!!")
 // const rioDeJaneiro = 'Rio de Janeiro';
 
 const listaDeDestinos = new Array(
-    'Salvador', 'São Paulo', 'Rio de Janeiro', 'Curitiba'
+    'Salvador', 
+    'São Paulo', 
+    'Rio de Janeiro', 
+    'Curitiba'
 );
 
 listaDeDestinos.push('Recife');//adicionar item na lista
@@ -18,3 +21,6 @@ console.log("Destinos possiveis : ");
 
 console.log(listaDeDestinos);
 
+listaDeDestinos.splice(2, 1); //a partir da 2ª posição, deleta 1 elemento
+console.log(listaDeDestinos);
+console.log(listaDeDestinos[1]);
