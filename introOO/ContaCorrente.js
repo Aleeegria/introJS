@@ -1,10 +1,9 @@
 //arq inicio letra maiusc é classe em JS
 // JS é fracamente tipada
-import { Cliente } from "./Cliente";
-
 // pode-se adicionar atributos em objetos dinamicamente em JS
 export class ContaCorrente {
     //atributos publicos
+    static qtdeDeContas = 0;
     agencia;
     _cliente;
 
@@ -28,6 +27,7 @@ export class ContaCorrente {
     constructor (cliente, agencia){
         this.agencia = agencia;
         this._cliente= cliente;
+        ContaCorrente.qtdeDeContas += 1;
     }
 
     sacar(valor) {
