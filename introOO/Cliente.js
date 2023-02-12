@@ -1,6 +1,5 @@
 //arq inicio letra maiusc é classe em JS
 
-import { ContaCorrente } from "./ContaCorrente";
 export class Cliente {
     nome;
     _cpf;
