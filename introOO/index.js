@@ -1,5 +1,5 @@
 import {Cliente} from "./Cliente.js"
-import {ContaCorrente} from "./ContaCorrente.js"
+import { ContaCorrente } from "./ContaCorrente.js";
 
 const cliente1 = new Cliente("Alê", 12345678912);
 conta1.agencia = 1001;
@@ -15,9 +15,9 @@ let valor = 1000;
 conta1.transferir(valor, conta2);
 conta1.transferir(valor, conta3);
 console.log("valor: ", valor);
-console.log(conta1.saldo);
-console.log(conta2.saldo);
-console.log(conta3.saldo);
+console.log(cliente1);
+console.log(cliente2);
+console.log(cliente3);
 
 
 

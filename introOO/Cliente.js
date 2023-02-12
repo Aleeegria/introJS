@@ -5,7 +5,7 @@ export class Cliente {
     _cpf;
 
     get cpf(){
-        this.cpf;
+        return this._cpf;
     }
 
     constructor (nome, cpf){
