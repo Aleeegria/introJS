@@ -1,30 +1,25 @@
-import {Cliente} from "./Cliente.js"
-import { Conta } from "./Conta.js";
+import { Cliente} from "./Contas/Cliente.js";
+import { Gerente } from "./Funcionarios/Gerente.js";
+import { Diretor } from "./Funcionarios/Diretor.js";
+import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
+
+const diretor = new Diretor("Alberto", 10000, 12345678910);
+diretor.cadastrarSenha("123456789");
+
+const gerente = new Gerente("Pedro", 5000, 23456789012);
+gerente.cadastrarSenha("23456789012");
+
+const cliente = new Cliente("Maria", "09876543212", 34567890123);
+cliente.cadastrarSenha("34567890123");
 
 
-const cliente1 = new Cliente("Alê", 12345678912);
-const conta1 = new Conta(0, 1001, cliente1);
-conta1.depositar(5000);
+const diretorEstaLogado = SistemaAutenticacao.login(diretor, "123456789");
+const gerenteEstaLogado = SistemaAutenticacao.login(gerente, "23456789012");
+const clienteEstaLogado = SistemaAutenticacao.login(cliente, "34567890123");
 
-const cliente2 = new Cliente("Pedro", 23456789123);
-const conta2 = new Conta(0, 1002, cliente2);
+console.log(diretorEstaLogado, gerenteEstaLogado, clienteEstaLogado);
+console.log(gerenteEstaLogado);
 
-const cliente3 = new Cliente("Augusto", 34567891234);
-const conta3 = new Conta(0, 1003, cliente3);
-
-let valor = 1000;
-conta1.transferir(valor, conta2);
-conta1.transferir(valor, conta3);
-
-const contaPoupanca = new Conta(50, cliente1, 1001);
-
-console.log(contaPoupanca);
-console.log("valor: ", valor, "\n" );
-console.log(cliente1, "\n" , conta1);
-console.log(cliente2, "\n", conta2);
-console.log(cliente3, "\n", conta3);
-
-contaCorrente.teste();
 
 
 
