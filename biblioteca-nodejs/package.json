@@ -1,0 +1,21 @@
+{
+    "nome" : " 2708-node-lib-md " ,
+    "versão" : " 1.0.0 " ,
+    "descrição" : " " ,
+    "principal" : " index.js " ,
+    "scripts" : {
+      "test" : " echo \" Erro: nenhum teste especificado \" && exit 1 "
+    },
+    "repositório" : {
+      "tipo" : " git " ,
+      "url" : " git+https://github.com/alura-cursos/2708-node-lib-md.git "
+    },
+    "palavras-chave" : [],
+    "autor" : " " ,
+    "licença" : " ISC " ,
+    "erros" : {
+      "url" : " https://github.com/alura-cursos/2708-node-lib-md/issues "
+    },
+    "homepage" : " https://github.com/alura-cursos/2708-node-lib-md#readme "
+  }
+  
