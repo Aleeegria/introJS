@@ -3,6 +3,7 @@
     "versão" : " 1.0.0 " ,
     "descrição" : " " ,
     "principal" : " index.js " ,
+    "type": "module",
     "scripts" : {
       "test" : " echo \" Erro: nenhum teste especificado \" && exit 1 "
     },
@@ -16,6 +17,9 @@
     "erros" : {
       "url" : " https://github.com/alura-cursos/2708-node-lib-md/issues "
     },
-    "homepage" : " https://github.com/alura-cursos/2708-node-lib-md#readme "
+    "homepage" : " https://github.com/alura-cursos/2708-node-lib-md#readme ",
+    "dependencies": {
+      "chalk": "5.2.0"
+    }
   }
   
