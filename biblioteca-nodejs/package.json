@@ -1,25 +1,38 @@
 {
-    "nome" : " 2708-node-lib-md " ,
-    "versão" : " 1.0.0 " ,
-    "descrição" : " " ,
-    "principal" : " index.js " ,
-    "type": "module",
-    "scripts" : {
-      "test" : " echo \" Erro: nenhum teste especificado \" && exit 1 "
-    },
-    "repositório" : {
-      "tipo" : " git " ,
-      "url" : " git+https://github.com/alura-cursos/2708-node-lib-md.git "
-    },
-    "palavras-chave" : [],
-    "autor" : " " ,
-    "licença" : " ISC " ,
-    "erros" : {
-      "url" : " https://github.com/alura-cursos/2708-node-lib-md/issues "
-    },
-    "homepage" : " https://github.com/alura-cursos/2708-node-lib-md#readme ",
-    "dependencies": {
-      "chalk": "5.2.0"
-    }
+  "nome": " alegria-mynpm-node-lib-md ",
+  "versão": " 1.0.0 ",
+  "descrição": "estudos BB/Alura ",
+  "principal": " ./cli.js ",
+  "bin": {
+    "<nome_da_lib>": "./cli.js"
+  },
+  "preferGlobal": true,
+  "type": "module",
+  "scripts": {
+    "test": " jest ./test ",
+    "cli": "node ./src/cli.js ./arquivos/texto.md",
+    "cli:valida": "node ./src/cli.js ./arquivos/texto.md --valida"
+  },
+  "repositório": {
+    "tipo": " git ",
+    "url": " git+https://github.com/Aleeegria/NodeJS-curso-BB-Alura "
+  },
+  "palavras-chave": [
+    "markdown",
+    "URL"
+  ],
+  "autor": " Alexandra ",
+  "licença": " ISC ",
+  "erros": {
+    "url": " https://github.com/Aleeegria/NodeJS-curso-BB-Alura/issues ",
+    "email": "alepope66@gmail.com"
+  },
+  "homepage": " https://github.com/Aleeegria/NodeJS-curso-BB-Alura/#readme ",
+  "dependencies": {
+    "chalk": "5.2.0",
+    "node-fetch": "^17.5.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
-  
+}
